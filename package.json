@@ -2,6 +2,7 @@
   "scripts": {
     "dev": "next dev",
     "export": "next build && next export",
+    "build": "next build",
     "fmt": "prettier --write .",
     "deploy": "yarn export && arweave deploy ./out/index.html --package --key-file arweave.json --force-skip-confirmation && arweave deploy ./out/dashboard.html --package --key-file arweave.json --force-skip-confirmation && arweave deploy ./out/og.png --package --key-file arweave.json --force-skip-confirmation"
   },
